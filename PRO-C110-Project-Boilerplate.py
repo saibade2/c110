@@ -31,7 +31,8 @@ while True:
     rock = int(prediction[0][0]*100) 
     paper = int(prediction[0][1]*100) 
     scissor = int(prediction[0][2]*100) 
-    # printing percentage confidence print(f"Rock: {rock} %, Paper: {paper} %, Scissor: {scissor} %")
+    # printing percentage confidence 
+    print(f"Rock: {rock} %, Paper: {paper} %, Scissor: {scissor} %")
 
     print("Prediction : ", prediction)
         
