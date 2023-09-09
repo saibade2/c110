@@ -28,6 +28,11 @@ while True:
     # Predict Result
     prediction = model.predict(normalised_image)
 
+    rock = int(predictions[0][0]*100) 
+    paper = int(predictions[0][1]*100) 
+    scissor = int(predictions[0][2]*100) 
+    # printing percentage confidence print(f"Rock: {rock} %, Paper: {paper} %, Scissor: {scissor} %")
+
     print("Prediction : ", prediction)
         
     cv2.imshow("Result",frame)
